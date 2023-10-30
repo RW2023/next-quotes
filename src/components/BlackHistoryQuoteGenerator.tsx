@@ -25,11 +25,17 @@ const BlackHistoryQuoteGenerator: React.FC<BlackHistoryQuoteGeneratorProps> = ({
   }
 
   return (
-    <div className="quote-generator">
-      <blockquote>
-        &ldquo;{quote.quote}&rdquo; - {quote.author}
+      <div className="mr-3 quote-generator p-6 bg-background rounded-lg shadow-lg flex flex-col border drop-shadow-lg w-full med:w-1/2 m-auto">
+      <blockquote className="text-headline mb-4 italic text-2xl">
+        &ldquo;{quote.quote}&rdquo; - <span className="text-main font-bold">{quote.author}</span>
       </blockquote>
-      <button type='submit' onClick={handleButtonClick}>Generate New Quote</button>
+      <button 
+      type='submit'
+        onClick={handleButtonClick} 
+        className="bg-button text-buttonText px-4 py-2 rounded-lg font-bold  btn-wide hover:opacity-70 ease-in-out m-auto"
+      >
+        Generate New Quote
+      </button>
     </div>
   );
 };
