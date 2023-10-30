@@ -6,11 +6,13 @@ const blackHistoryQuotes = [
     id: '1',
     author: 'Martin Luther King Jr.',
     quote: 'The time is always right to do what is right.',
+    img: '/speech.png',
   },
   {
     id: '2',
     author: 'Harriet Tubman',
     quote: 'Every great dream begins with a dreamer.',
+    img: 'https://www.blackhistorymonth.org.uk/wp-content/uploads/2023/03/Harriet-Tubman-623x438.jpg',
   },
   {
     id: '3',

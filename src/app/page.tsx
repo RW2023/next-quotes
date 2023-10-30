@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // Import necessary libraries and components
 'use client';
 import React, { useState } from 'react';
@@ -17,12 +18,28 @@ export default function Home() {
   };
 
   return (
-    <div>
-      <h1 className="text-center text-headline text-xl p-2 mx-0">Home</h1>
-      <BlackHistoryQuoteGenerator
-        quote={quote}
-        handleNewQuote={handleNewQuote}
-      />
+    <div className='grid-cols-2 '>
+      <div className="flex flex-col">
+        <h1 className="text-center text-headline text-xl p-2 mx-0  m-auto uppercase">
+          random quotes
+        </h1>
+        <div>
+          <img
+            src={
+              quote.img ||
+              '/speech.png'
+            }
+            alt="mlk"
+            height={400}
+            width={400}
+            className="m-auto p-1 mb-4 border-2 border-headline rounded-lg shadow-lg"
+          />
+        </div>
+        <BlackHistoryQuoteGenerator
+          quote={quote}
+          handleNewQuote={handleNewQuote}
+        />
+      </div>
     </div>
-  );
+  )
 }
