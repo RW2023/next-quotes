@@ -1,4 +1,6 @@
 // File: src/data/blackHistoryQuotes.js
+
+
 const blackHistoryQuotes = [
   {
     id: '1',

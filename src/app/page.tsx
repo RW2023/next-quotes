@@ -1,26 +1,28 @@
+// Import necessary libraries and components
 'use client';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import BlackHistoryQuoteGenerator from '@/components/BlackHistoryQuoteGenerator';
+import blackHistoryQuotes from '@/data/blackHistoryQuotes'; // Adjust the import path as needed
 
 export default function Home() {
-  const [quote, setQuote] = useState('');
+  const [quote, setQuote] = useState(generateRandomQuote());
 
-  interface QuoteData {
-    content: string; // Assuming the quote content is a string
+  function generateRandomQuote() {
+    const randomIndex = Math.floor(Math.random() * blackHistoryQuotes.length);
+    return blackHistoryQuotes[randomIndex];
   }
-  
 
-  const handleNewQuote = async () => {
-    const response = await fetch('https://api.quotable.io/random?tags=history');
-    const data: QuoteData = await response.json(); // Type annotation to ensure compatibility with QuoteData interface
-    setQuote(data.content);
+  const handleNewQuote = () => {
+    setQuote(generateRandomQuote());
   };
-  
 
   return (
     <div>
       <h1 className="text-center text-headline text-xl p-2 mx-0">Home</h1>
-      <BlackHistoryQuoteGenerator quote={quote} handleNewQuote={handleNewQuote} />
+      <BlackHistoryQuoteGenerator
+        quote={quote}
+        handleNewQuote={handleNewQuote}
+      />
     </div>
   );
 }
