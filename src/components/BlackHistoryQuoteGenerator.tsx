@@ -22,7 +22,7 @@ const BlackHistoryQuoteGenerator: React.FC<BlackHistoryQuoteGeneratorProps> = ({
   return (
     <div className="flex flex-col items-center p-4">
       <blockquote className="text-headline mb-4 italic text-2xl text-center">
-        {quote.quote} - {quote.author}
+        {quote.quote} - <span className="text-button">{quote.author}</span>
       </blockquote>
       <button
         type="submit"
