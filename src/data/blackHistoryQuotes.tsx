@@ -6,13 +6,13 @@ const blackHistoryQuotes = [
     id: '1',
     author: 'Martin Luther King Jr.',
     quote: 'The time is always right to do what is right.',
-    img: '/speech.png',
+    img: '/Martin_Luther_King,_Jr..jpg',
   },
   {
     id: '2',
     author: 'Harriet Tubman',
     quote: 'Every great dream begins with a dreamer.',
-    img: '/harriet.png',
+    img: '/Harriet_Tubman.jpg',
   },
   {
     id: '3',
@@ -58,6 +58,7 @@ const blackHistoryQuotes = [
     id: '9',
     author: 'Sojourner Truth',
     quote: 'Truth is powerful and it prevails.',
+    img:"/Sojourner_Truth.jpg"
   },
   {
     id: '10',
@@ -99,6 +100,7 @@ const blackHistoryQuotes = [
     author: 'Shirley Chisholm',
     quote:
       "You don't make progress by standing on the sidelines, whimpering and complaining. You make progress by implementing ideas.",
+      img:"/Shirley_Chisholm.jpg"
   },
   {
     id: '17',
@@ -110,6 +112,7 @@ const blackHistoryQuotes = [
     author: 'Angela Davis',
     quote:
       'I am no longer accepting the things I cannot change. I am changing the things I cannot accept.',
+    img: '/Angela_Davis.jpg',
   },
   {
     id: '19',
