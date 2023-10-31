@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 // Import necessary libraries and components
+// File: src/pages/index.tsx
 'use client';
+
 import React, { useState } from 'react';
 import BlackHistoryQuoteGenerator from '@/components/BlackHistoryQuoteGenerator';
-import blackHistoryQuotes from '@/data/blackHistoryQuotes'; // Adjust the import path as needed
+import blackHistoryQuotes from '@/data/blackHistoryQuotes';
 
 export default function Home() {
   const [quote, setQuote] = useState(generateRandomQuote());
@@ -18,28 +20,23 @@ export default function Home() {
   };
 
   return (
-    <div className='grid-cols-2 '>
-      <div className="flex flex-col">
-        <h1 className="text-center text-headline text-xl p-2 mx-0  m-auto uppercase">
-          random quotes
-        </h1>
-        <div>
-          <img
-            src={
-              quote.img ||
-              '/speech.png'
-            }
-            alt="mlk"
-            height={400}
-            width={400}
-            className="m-auto p-1 mb-4 border-2 border-headline rounded-lg shadow-lg"
-          />
-        </div>
+    <div className="container mx-auto min-h-screen p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <h1 className="col-span-full text-center mb-4">Quotes</h1>
+      <div className="flex flex-col items-center">
+        <img
+          src={quote.img || '/speech.png'}
+          alt="mlk"
+          height={600}
+          width={600}
+          className="m-auto p-1 mb-4 border-2 border-headline rounded-lg shadow-lg"
+        />
+      </div>
+      <div className="flex flex-col items-center">
         <BlackHistoryQuoteGenerator
           quote={quote}
           handleNewQuote={handleNewQuote}
         />
       </div>
     </div>
-  )
+  );
 }
