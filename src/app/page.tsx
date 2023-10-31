@@ -21,13 +21,13 @@ export default function Home() {
 
   return (
     <div className="container mx-auto min-h-screen p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-      <h1 className="col-span-full text-center mb-4">Quotes</h1>
+      <h1 className="col-span-full text-center mb-4 text-xl">Wise Words from Black Thought Leaders</h1>
       <div className="flex flex-col items-center">
         <img
-          src={quote.img || '/speech.png'}
+          src={quote.img || '/fist.png'}
           alt="mlk"
-          height={600}
-          width={600}
+          height={500}
+          width={500}
           className="m-auto p-1 mb-4 border-2 border-headline rounded-lg shadow-lg"
         />
       </div>
