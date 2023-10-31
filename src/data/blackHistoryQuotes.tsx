@@ -12,37 +12,42 @@ const blackHistoryQuotes = [
     id: '2',
     author: 'Harriet Tubman',
     quote: 'Every great dream begins with a dreamer.',
-    img: 'https://www.blackhistorymonth.org.uk/wp-content/uploads/2023/03/Harriet-Tubman-623x438.jpg',
+    img: '/harriet.png',
   },
   {
     id: '3',
     author: 'Nelson Mandela',
     quote:
       'The greatest glory in living lies not in never falling, but in rising every time we fall.',
+    img: '/nelsonMandela.jpg',
   },
   {
     id: '4',
     author: 'Maya Angelou',
     quote:
       "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+    img: '/Angelou.jpg',
   },
   {
     id: '5',
     author: 'Malcolm X',
     quote:
       'Education is the passport to the future, for tomorrow belongs to those who prepare for it today.',
+    img: '/Malcolm_X.jpg',
   },
   {
     id: '6',
     author: 'James Baldwin',
     quote:
       'Not everything that is faced can be changed, but nothing can be changed until it is faced.',
+    img: '/James_Baldwin.jpg',
   },
   {
     id: '7',
     author: 'Rosa Parks',
     quote:
       "I have learned over the years that when one's mind is made up, this diminishes fear.",
+    img: '/Rosaparks.jpg',
   },
   {
     id: '8',
@@ -69,6 +74,7 @@ const blackHistoryQuotes = [
     id: '12',
     author: 'Marcus Garvey',
     quote: 'With confidence, you have won before you have started.',
+    img: '/marcusGarvey.jpg',
   },
   {
     id: '13',
