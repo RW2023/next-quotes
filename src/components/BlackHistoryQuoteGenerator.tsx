@@ -29,7 +29,7 @@ const BlackHistoryQuoteGenerator: React.FC<BlackHistoryQuoteGeneratorProps> = ({
         onClick={handleButtonClick}
         className="bg-button text-buttonText px-4 py-2 rounded-lg font-bold hover:opacity-70 ease-in-out"
       >
-        Generate New Quote
+        Fetch New Quote
       </button>
     </div>
   );
