@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Quotable Quotes',
-  description: 'Random quotes from historical figures',
+  title: 'Historical Black Thought Leaders',
+  description: 'Random quotes from historical black figures',
 }
 
 export default function RootLayout({
@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" data-theme='forest'>
+    <html lang="en" data-theme='halloween'>
       <body>{children}</body>
     </html>
   )
