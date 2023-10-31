@@ -1,11 +1,12 @@
-/* eslint-disable @next/next/no-img-element */
-// Import necessary libraries and components
 // File: src/pages/index.tsx
+
 'use client';
 
 import React, { useState } from 'react';
 import BlackHistoryQuoteGenerator from '@/components/BlackHistoryQuoteGenerator';
 import blackHistoryQuotes from '@/data/blackHistoryQuotes';
+import Image from 'next/image';
+
 
 export default function Home() {
   const [quote, setQuote] = useState(generateRandomQuote());
@@ -20,22 +21,28 @@ export default function Home() {
   };
 
   return (
-    <div className="container mx-auto min-h-screen p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-      <h1 className="col-span-full text-center mb-4 text-xl">Wise Words from Black Thought Leaders</h1>
-      <div className="flex flex-col items-center">
-        <img
-          src={quote.img || '/fist.png'}
-          alt="mlk"
-          height={500}
-          width={500}
-          className="m-auto p-1 mb-4 border-2 border-headline rounded-lg shadow-lg"
-        />
-      </div>
-      <div className="flex flex-col items-center">
-        <BlackHistoryQuoteGenerator
-          quote={quote}
-          handleNewQuote={handleNewQuote}
-        />
+    <div className="min-h-screen bg-background">
+      <div className="container mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-6 bg-secondary shadow-lg rounded-lg pt-6">
+        <h1 className="col-span-full text-center text-2xl font-bold mb-6 mt-3 text-tertiary">
+          Wise Words from Black Thought Leaders
+        </h1>
+        <div className="flex flex-col items-center p-3 bg-tertiary rounded-lg shadow-lg">
+          <h2 className="text-headline text-lg">{quote.author}</h2>
+          <Image
+            src={quote.img || '/fist.png'}
+            alt={quote.author}
+            height={300}
+            width={300}
+            className="border-2 border-headline p-1 bg-tertiary rounded-lg shadow-lg mb-3"
+          />
+          <h2 className="text-tertiary text-lg">{quote.author}</h2>
+        </div>
+        <div className="flex flex-col items-center p-3 bg-tertiary rounded-lg shadow-lg">
+          <BlackHistoryQuoteGenerator
+            quote={quote}
+            handleNewQuote={handleNewQuote}
+          />
+        </div>
       </div>
     </div>
   );
