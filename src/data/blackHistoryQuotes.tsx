@@ -53,18 +53,20 @@ const blackHistoryQuotes = [
     id: '8',
     author: 'Frederick Douglass',
     quote: 'It is easier to build strong children than to repair broken men.',
+    img: '/Frederick_Douglass.jpg',
   },
   {
     id: '9',
     author: 'Sojourner Truth',
     quote: 'Truth is powerful and it prevails.',
-    img:"/Sojourner_Truth.jpg"
+    img: '/Sojourner_Truth.jpg',
   },
   {
     id: '10',
     author: 'Thurgood Marshall',
     quote:
       'In recognizing the humanity of our fellow beings, we pay ourselves the highest tribute.',
+    img: '/Thurgood-marshall.jpg',
   },
   {
     id: '11',
@@ -94,13 +96,14 @@ const blackHistoryQuotes = [
     author: 'Langston Hughes',
     quote:
       'Hold fast to dreams, for if dreams die, life is a broken-winged bird that cannot fly.',
+    img: '/LangstonHughes.jpg',
   },
   {
     id: '16',
     author: 'Shirley Chisholm',
     quote:
       "You don't make progress by standing on the sidelines, whimpering and complaining. You make progress by implementing ideas.",
-      img:"/Shirley_Chisholm.jpg"
+    img: '/Shirley_Chisholm.jpg',
   },
   {
     id: '17',
@@ -124,6 +127,7 @@ const blackHistoryQuotes = [
     author: 'Carter G. Woodson',
     quote:
       'Those who have no record of what their forebears have accomplished lose the inspiration which comes from the teaching of biography and history.',
+    img: '/Carter_G._Woodson.jpg',
   },
 ];
 
