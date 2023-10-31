@@ -24,9 +24,9 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-6 bg-secondary shadow-lg rounded-lg pt-6">
         <h1 className="col-span-full text-center text-2xl font-bold mb-6 mt-3 text-tertiary">
-          Wise Words from Black Thought Leaders
+          Wise Words from Random African American Thought Leaders
         </h1>
-        <div className="flex flex-col items-center p-3 bg-tertiary rounded-lg shadow-lg">
+        <div className="flex flex-col items-center p-3 bg-tertiary rounded-lg shadow-lg drop-shadow-lg">
           <h2 className="text-headline text-lg">{quote.author}</h2>
           <Image
             src={quote.img || '/fist.png'}
