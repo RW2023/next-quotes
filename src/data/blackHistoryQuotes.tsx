@@ -72,6 +72,7 @@ const blackHistoryQuotes = [
     id: '11',
     author: 'W.E.B. Du Bois',
     quote: 'The cost of liberty is less than the price of repression.',
+    img: '/W.E.B._Du_Bois.jpg',
   },
   {
     id: '12',
@@ -84,12 +85,14 @@ const blackHistoryQuotes = [
     author: 'Audre Lorde',
     quote:
       'I am not free while any woman is unfree, even when her shackles are very different from my own.',
+    img: '/Audre_Lorde.jpg',
   },
   {
     id: '14',
     author: 'Booker T. Washington',
     quote:
       'Success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome.',
+    img: '/Booker_T_Washington.jpg',
   },
   {
     id: '15',
@@ -109,6 +112,7 @@ const blackHistoryQuotes = [
     id: '17',
     author: 'Ida B. Wells',
     quote: 'The way to right wrongs is to turn the light of truth upon them.',
+    img: '/Ida_B._Wells-Barnett.jpg',
   },
   {
     id: '18',
@@ -121,6 +125,7 @@ const blackHistoryQuotes = [
     id: '19',
     author: 'George Washington Carver',
     quote: 'Education is the key to unlock the golden door of freedom.',
+    img: '/George_Washington_Carver.jpg',
   },
   {
     id: '20',
