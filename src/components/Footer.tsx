@@ -19,7 +19,7 @@ const Footer: FC<Props> = (props): JSX.Element => {
               Ryan Wilson
             </a>
           </span>
-           A black Developer. All rights reserved.
+           A black Dev.
         </p>
       </div>
     );
