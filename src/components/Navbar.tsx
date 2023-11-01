@@ -5,7 +5,7 @@ interface Props {}
 
 const Navbar: FC<Props> = (props): JSX.Element => {
     return (
-        <nav className='nav mb-2 flex flex-row justify-between' data-them='dark'>
+        <nav className='nav mb-2 flex flex-row justify-between text-3xl text-button ease-in-out ' data-them='dark'>
             <ul className="flex flex-row justify-center w-full">
                 <li className="mx-4 btn-ghost rounded">
                     <Link href={'/'}>
