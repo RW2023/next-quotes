@@ -1,5 +1,5 @@
 // pages/_app.js or app/pages/_app.js
-import './globals.css';
+import '@/app/globals.css';
 import type { AppProps } from 'next/app';
 import Layout from '@/app/layout'
 
