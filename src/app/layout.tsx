@@ -4,7 +4,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Head from 'next/head';
-import ogImage from '@/public/og.png'; 
+import ogImage from '/og.png'; 
 
 interface Metadata {
   title: string;
