@@ -1,8 +1,8 @@
 // src/app/layout.tsx
 import { NextPage } from 'next';
 import './globals.css';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import Navbar from '@/components/ui/Navbar';
+import Footer from '@/components/ui/Footer';
 import Head from 'next/head';
 
 interface Metadata {
