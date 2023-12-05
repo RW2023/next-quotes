@@ -1,6 +1,6 @@
 'use client';
 import { FC } from 'react';
-import Heading from '@/Components/ui/Heading';
+import Heading from '@/components/Heading';
 
 interface Props {}
 
