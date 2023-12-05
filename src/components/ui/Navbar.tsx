@@ -16,7 +16,7 @@ const Navbar = () => {
         <Link href="/">
           <span className="font-semibold text-xl tracking-tight cursor-pointer">
             <div>
-              <Heading title="Quotes" iconClass="fas fa-book"/>
+              <Heading title="Quotes" iconClass="fas fa-book" />
             </div>
           </span>
         </Link>
@@ -25,7 +25,7 @@ const Navbar = () => {
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="text-3xl inline-flex items-center justify-center p-2 rounded-md hover:bg-button hover:text-buttonText focus:outline-1 focus:ring-2 focus:ring-inset focus:ring-buttonText text-base-content"
+          className="text-3xl inline-flex items-center justify-center p-2 rounded-md hover:bg-button hover:text-buttonText focus:outline-none focus:ring-2 focus:ring-inset focus:ring-buttonText text-base-content"
         >
           {isOpen ? (
             <svg
@@ -66,31 +66,21 @@ const Navbar = () => {
         } w-full lg:flex lg:items-center lg:w-auto lg:justify-end`}
       >
         <div className="text-sm lg:flex-grow">
-          {/* <Link href={'/drinks'}>
-            <span className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-strokeDark mr-4 cursor-pointer">
-              <i className="fas fa-wine-bottle mr-2"></i>
-            </span>
-          </Link> */}
           <Link href="/about">
-            <span className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-strokeDark mr-4 cursor-pointer">
+            <span className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-button hover:underline mr-4 cursor-pointer">
               <i className="fas fa-info-circle mr-2"></i>About
             </span>
           </Link>
           <Link href="/feedback">
-            <span className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-buttonText mr-4 cursor-pointer">
+            <span className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-button hover:underline mr-4 cursor-pointer">
               <i className="fas fa-comments mr-2"></i>Feedback
             </span>
           </Link>
           <Link href="/contact">
-            <span className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-buttonText cursor-pointer mr-2 border-base-300">
+            <span className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-button hover:underline cursor-pointer mr-2">
               <i className="fas fa-envelope mr-2"></i>Contact
             </span>
           </Link>
-          {/* <Link href="/themes">
-            <span className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-buttonText cursor-pointer mr-2 border-base-300 ease-in-out transition-transform">
-              <i className="fas fa-palette mr-2"></i>Themes
-            </span>
-          </Link> */}
         </div>
       </div>
     </nav>
