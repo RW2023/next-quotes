@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import BlackHistoryQuoteGenerator from '@/components/BlackHistoryQuoteGenerator';
 import blackHistoryQuotes from '@/data/blackHistoryQuotes';
 import Image from 'next/image';
+import QuoteHeading from '@/components/ui/QuoteHeading';
 
 export default function Home() {
   const [quote, setQuote] = useState(generateRandomQuote());
@@ -23,9 +24,8 @@ export default function Home() {
         <h1 className="col-span-full text-center text-5xl font-bold text-headline">
           Timeless Wisdom from Black Thought Leaders
         </h1>
-        <h2 className="col-span-full text-center text-3xl font-bold mb-4 mt-1 text-tertiary m-1">
-          Wise Words from <span className="font-bold"> {quote.author} </span>
-        </h2>
+        <QuoteHeading quoteText="Wise Words from" author={quote.author} />
+
         <div className="card bordered flex flex-col items-center p-3 bg-tertiary rounded-lg shadow-lg m-1">
           <h2>
             With us from <span className="text-headline">{quote.lifespan}</span>
