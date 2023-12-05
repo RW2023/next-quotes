@@ -78,7 +78,7 @@ const Navbar = () => {
           <Link href="/about">
             <span
               onClick={closeNavbar}
-              className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-buttonText hover:underline mr-4 cursor-pointer"
+              className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-button hover:underline mr-4 cursor-pointer"
             >
               <i className="fas fa-info-circle mr-2"></i>About
             </span>
@@ -86,7 +86,7 @@ const Navbar = () => {
           <Link href="/feedback">
             <span
               onClick={closeNavbar}
-              className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-buttonText hover:underline mr-4 cursor-pointer"
+              className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-button hover:underline mr-4 cursor-pointer"
             >
               <i className="fas fa-comments mr-2"></i>Feedback
             </span>
@@ -94,7 +94,7 @@ const Navbar = () => {
           <Link href="/contact">
             <span
               onClick={closeNavbar}
-              className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-buttonText hover:underline cursor-pointer mr-2"
+              className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-button hover:underline cursor-pointer mr-2"
             >
               <i className="fas fa-envelope mr-2"></i>Contact
             </span>
