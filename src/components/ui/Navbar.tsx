@@ -16,7 +16,7 @@ const Navbar = () => {
         <Link href="/">
           <span className="font-semibold text-xl tracking-tight cursor-pointer">
             <div>
-              <Heading title="Quotes" iconClass="fas fa-book" />
+              <Heading title="inspiration" iconClass="fas fa-book" />
             </div>
           </span>
         </Link>
