@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 md:px-0 p-6 grid grid-cols-1 md:grid-cols-2 gap-2 bg-secondary shadow-lg rounded-lg">
+      <div className="container mx-auto px-4 md:px-0 p-6 grid grid-cols-1 md:grid-cols-2 gap-2 bg-background shadow-lg rounded-lg">
         <h1 className="col-span-full text-center text-5xl font-bold text-headline">
           Timeless Wisdom from Black Thought Leaders
         </h1>
