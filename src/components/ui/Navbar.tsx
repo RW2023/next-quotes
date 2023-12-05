@@ -7,6 +7,11 @@ import Heading from '@/components/ui/Heading';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Function to close the navbar
+  const closeNavbar = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav
       className="flex items-center justify-between flex-wrap p-3 navbar mt-3 sticky top-0 z-20 bg-base-200 mb-1 shadow-2xl bg-opacity-90"
@@ -14,9 +19,12 @@ const Navbar = () => {
     >
       <div className="flex items-center flex-shrink-0 text-2xl mr-6">
         <Link href="/">
-          <span className="font-semibold text-xl tracking-tight cursor-pointer">
+          <span
+            onClick={closeNavbar}
+            className="font-semibold text-xl tracking-tight cursor-pointer"
+          >
             <div>
-              <Heading title="inspiration" iconClass="fas fa-book" />
+              <Heading title="Quotes" />
             </div>
           </span>
         </Link>
@@ -25,12 +33,13 @@ const Navbar = () => {
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="text-3xl inline-flex items-center justify-center p-2 rounded-md hover:bg-button hover:text-buttonText focus:outline-none focus:ring-2 focus:ring-inset focus:ring-buttonText text-base-content"
+          className="text-4xl inline-flex items-center justify-center p-2 rounded-md hover:bg-button hover:text-buttonText focus:outline-none focus:ring-2 focus:ring-inset focus:ring-buttonText text-base-content"
+          style={{ color: '#4A5568' }} // Adjust the color as needed
         >
           {isOpen ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8"
+              className="h-10 w-10" // Increased size
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -45,7 +54,7 @@ const Navbar = () => {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8"
+              className="h-10 w-10" // Increased size
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -67,17 +76,26 @@ const Navbar = () => {
       >
         <div className="text-sm lg:flex-grow">
           <Link href="/about">
-            <span className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-button hover:underline mr-4 cursor-pointer">
+            <span
+              onClick={closeNavbar}
+              className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-buttonText hover:underline mr-4 cursor-pointer"
+            >
               <i className="fas fa-info-circle mr-2"></i>About
             </span>
           </Link>
           <Link href="/feedback">
-            <span className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-button hover:underline mr-4 cursor-pointer">
+            <span
+              onClick={closeNavbar}
+              className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-buttonText hover:underline mr-4 cursor-pointer"
+            >
               <i className="fas fa-comments mr-2"></i>Feedback
             </span>
           </Link>
           <Link href="/contact">
-            <span className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-button hover:underline cursor-pointer mr-2">
+            <span
+              onClick={closeNavbar}
+              className="block mt-4 lg:inline-block lg:mt-0 text-strokeLight text-xl hover:text-buttonText hover:underline cursor-pointer mr-2"
+            >
               <i className="fas fa-envelope mr-2"></i>Contact
             </span>
           </Link>
