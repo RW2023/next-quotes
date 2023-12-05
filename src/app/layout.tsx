@@ -11,8 +11,8 @@ interface Metadata {
 }
 
 export const metadata: Metadata = {
-  title: 'Historical Black Thought Leaders',
-  description: 'Random quotes from historical black figures',
+  title: 'Inspirational Voices',
+  description: 'Quotes from African American Thought Leaders',
 };
 
 const RootLayout: NextPage<{ children: React.ReactNode }> = ({ children }) => {
