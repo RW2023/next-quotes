@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="flex items-center justify-between flex-wrap p-3 navbar mt-3 sticky top-0 z-50 bg-base-200 mb-1 shadow-2xl"
+      className="flex items-center justify-between flex-wrap p-3 navbar mt-3 sticky top-0 z-20 bg-base-200 mb-1 shadow-2xl bg-opacity-90"
       style={{ fontFamily: "'Poppins', sans-serif" }}
     >
       <div className="flex items-center flex-shrink-0 text-2xl mr-6">
